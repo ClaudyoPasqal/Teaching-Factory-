@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="Css/addbook.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar start -->
+        <div class="navbar">
+            <div class="btn">
+                <a href="index.html">
+                    <img src="assets/Frame.png" alt="">
+                </a>
+            </div>
+        </div> 
+        <div class="action">
+            <div class="profile" onclick="menuToggle()">
+                <img src="assets/Profile 4.png" alt="" id="profileadmin">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><img src="assets/Add book.png" alt="" id="addbook"><a href="addbook.html">Add Book</a></li>
+                    <li class="border"><img src="assets/logout 1.png" alt=""><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Navbar end -->
+        <!-- Add book start -->
+        <div class="center">
+            <div class="content">
+                <div class="head">
+                    <h1>Add book</h1>
+                </div>
+                <div class="isi">
+                    <input type="text" placeholder="  Title">
+                    <input type="text" placeholder="  Publication Date">
+                    <input type="text" placeholder="  Pages">
+                    <input type="text" placeholder="  ISBN">
+                    <input type="text" placeholder="  Price">
+                    <input type="text" placeholder="  About This Book" id="about">
+                    <div class="attache">
+                        <div id="tambahbuku">
+                        <button disabled id="btnklip">Attache Book File <img src="assets/Klip.png" alt="" id="klip"></button>
+                        </div>
+                        <div id="book">
+                        <a href="admin.html"><button id="buku">Add Book<img src="assets/buku kecil1.png" alt="" id="imgbuku"></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="Css/profile.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar start -->
+        <div class="navbar">
+            <div class="btn">
+                <a href="index.html">
+                    <img src="assets/Frame.png" alt="">
+                </a>
+            </div>
+        </div> 
+        <div class="action">
+            <div class="profile" onclick="menuToggle()">
+                <img src="assets/user.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><img src="assets/user 2.png" alt=""><a href="">Profile</a></li>
+                    <li class="border"><img src="assets/logout 1.png" alt=""><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Navbar end -->
+        <!-- Profile Start -->
+        <div class="profile1">
+            <div class="headtext">
+                <h1>Profile</h1>
+            </div>
+            <div class="content">
+                <div class="test">
+                <div class="image">
+                    <img src="assets/Email.png" alt="" width="30px" height="24px">
+                    <img src="assets/Male.png" alt="" width="30px" height="37px">
+                    <img src="assets/Telepon.png" alt="" width="27px" height="27px">
+                    <img src="assets/Alamat.png" alt="" width="21px" height="30px">
+                </div>
+                <div class="text">
+                    <h4 id="email">egigans@gmail.com</h4>
+                    <h6 id="email1">Email</h6>
+                    <h4 id="gender">Male</h4>
+                    <h6 id="gender1">Gender</h6>
+                    <h4 id="num">0812-8623-8911</h4>
+                    <h6 id="num1">Mobile Phone</h6>
+                    <h4 id="address">Perumahan Permata Bintaro Residence C-3</h4>
+                    <h6 id="address1">Address</h6>
+                </div>
+            </div>
+                <div class="user">
+                    <img src="assets/Profile 3.png" alt="">
+                    <button disabled="disabled" id="edit">Edit Profile</button>
+                </div>
+            </div>
+        </div>
+        <!-- Profile end -->
+        <!-- List book start -->
+        <div class="center">
+        <div class="listhead">
+            <h2 class="list">My Book</h2>
+        </div>
+        <div class="booklist">
+            <div class="list1">
+                <a href="download.html"><img src="assets/List 1.png" alt=""></a>
+                <h1 class="LT">My Own Private Mr. Cool</h1>
+                <h6 class="NT">By. Indah Hanaco</h6>
+                <button disabled="disabled" id="download">Download</button>
+            </div>
+            <div class="list2">
+                <img src="assets/Buku 2.png" alt="">
+                <h1 class="LT">Sebuah Seni untuk bersikap Bodo A...</h1>
+                <h6 class="NT">By. Mark Manson</h6>
+                <button disabled="disabled" id="download">Download</button>
+            </div>
+        </div>
+    </div>    
+    </div>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active');
+        }
+        function toggle(){
+            const popup = document.getElementById('popup1');
+            popup.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

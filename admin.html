@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="Css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar start -->
+        <div class="navbar">
+            <div class="btn">
+                <a href="index.html">
+                    <img src="assets/Frame.png" alt="">
+                </a>
+            </div>
+        </div> 
+        <div class="action">
+            <div class="profile" onclick="menuToggle()">
+                <img src="assets/Profile 4.png" alt="" id="profileadmin">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><img src="assets/Add book.png" alt="" id="addbook"><a href="addbook.html">Add Book</a></li>
+                    <li class="border"><img src="assets/logout 1.png" alt=""><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Navbar end -->
+        <!-- List start -->
+        <div class="center">
+            <div class="content">
+                <div class="headtext">
+                    <h1 id="HT">Incoming Transaction</h1>
+                </div>
+                <div class="isi">
+                    <div class="head">
+                        <h4 id="nomor">No</h4>
+                        <h4 id="user">User</h4>
+                        <h4 id="bank">Evidence of Transfer</h4>
+                        <h4>Product Purchased</h4>
+                        <h4 id="harga">Total Payment</h4>
+                        <h4>Status Payment</h4>
+                        <h4 id="action">Action</h4>
+                    </div>
+                    <div class="tabel">
+                        <h4>1.</h4>
+                        <h4 id="user1">Radif Ganteng</h4>
+                        <h4 id="bank1">Bca.jpg</h4>
+                        <h4 id="judul1">My Own Private Mr.Cool</h4>
+                        <h4 id="harga1">Rp. 75.000</h4>
+                        <h4 id="bayar1">Approve</h4>
+                        <img src="assets/Segitiga.png" alt="" id="segitiga">
+                    </div>
+                    <div class="tabel1">
+                        <h4>2.</h4>
+                        <h4 id="user2">Haris Rahman</h4>
+                        <h4 id="bank2">Bni.jpg</h4>
+                        <h4 id="judul2">Garis Waktu : Sebuah Perjalanan</h4>
+                        <h4 id="harga2">Rp. 49.300</h4>
+                        <h4 id="bayar2">Approve</h4>
+                        <img src="assets/Segitiga.png" alt="20px"id="segitiga">
+                    </div>
+                    <div class="tabel">
+                        <h4>3.</h4>
+                        <h4 id="user3">Amin Subagiyo</h4>
+                        <h4 id="bank3">Permata.jpg</h4>
+                        <h4 id="judul3">Ayahku(Bukan)Pembohong</h4>
+                        <h4 id="harga3">Rp. 130.000</h4>
+                        <h4 id="bayar3">Cancel</h4>
+                        <img src="assets/Segitiga.png" alt="20px" id="segitiga">
+                    </div>
+                    <div class="tabel1">
+                        <h4>4.</h4>
+                        <h4 id="user4">Haris Astina</h4>
+                        <h4 id="bank4">Permata.jpg</h4>
+                        <h4 id="judul4">Panduan Resmi Tes Cpns Cat 2019 / 2020</h4>
+                        <h4 id="harga4">Rp. 184.000</h4>
+                        <h4 id="bayar4">Pending</h4>
+                        <img src="assets/Segitiga.png" alt="20px"id="segitiga">
+                    </div>
+                    <div class="tabel">
+                        <h4>5.</h4>
+                        <h4 id="user5">Aziz Oni On</h4>
+                        <h4 id="bank5">Bi.jpg</h4>
+                        <h4 id="judul5">Warm Hearth</h4>
+                        <h4 id="harga5">Rp. 49.000</h4>
+                        <h4 id="bayar5">Pending</h4>
+                        <img src="assets/Segitiga.png" alt="20px" id="segitiga">
+                    </div>
+                    <div class="tabel1">
+                        <h4>6.</h4>
+                        <h4 id="user6">Egi Ganteng</h4>
+                        <h4 id="bank6">Bni.jpg</h4>
+                        <h4 id="judul6">My Own Private Mr. Cool, Sebuah Seni untuk Bersikap Bodo Amat</h4>
+                        <h4 id="harga6">Rp. 134.000</h4>
+                        <h4 id="bayar6">Pending</h4>
+                        <img src="assets/Segitiga.png" alt="20px" id="segitiga" onclick="dropdown()">
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <h6 id="approve">Approved</h6>
+                    <h6 id="cancel">Cancel</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active');
+        }
+        function dropdown(){
+            const dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

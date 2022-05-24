@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Sen&family=Source+Sans+Pro:wght@300;400&family=Vollkorn&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: #E5E5E5;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Sen', sans-serif;
+}
+/* Navbar Start */
+.action{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 18px;
+  font-family: 'Sen', sans-serif;
+}
+.action .menu{
+  position: absolute;
+  top: 80px;
+  right: -2px;
+  padding: 10px, 20px;
+  background-color: #e5e5ee;
+  width: 200px;
+  height: 120px;
+  box-sizing: 0px 5px 25px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 20px rgba(0, 0, 0, 0.25);
+}
+.action .menu.active{
+  visibility: visible;
+  opacity: 1;
+}
+.action .menu::before
+{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background-color: #e5e5ee;
+  transform: rotate(45deg);
+}
+.action .menu ul li{
+  list-style: none;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+.action .menu ul li img{
+  max-width: 20px;
+  margin-top: 4px;
+  margin-right: 20px;
+  margin-left: 30px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.action .menu ul li:hover{
+  opacity: 1;
+}
+.action .menu ul li a{
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.5s;
+  margin-top: 4px;
+  margin-left: 0px;
+}
+.action .menu ul li a:hover{
+  color: rgb(63, 63, 63);
+}
+.action .menu ul .border{
+  border-top: 1px solid rgba(0,0,0,05);
+}
+.navbar{
+    background-color:transparent;
+    position: relative;
+    top: 100px;
+    right: 0px;
+    background-color: transparent;
+}
+.btn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    left: 40px;
+    top: -60px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    
+}
+#profileadmin{
+    padding: 10px;
+}
+/* Navbar End */
+/* Content Start */
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 50px;
+    width: 80%;
+}
+.head{
+    width: 92%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.isi{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+input{
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #BCBCBC;
+    border-radius: 5px;
+    width: 995px;
+    height: 50px;
+    color: #333333;
+    font-size: 18px;
+}
+#about{
+    height: 200px;
+}
+/* #about::placeholder{
+    
+} */
+.attache{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: 'Sen', sans-serif;
+  margin-bottom: 50px;
+}
+#tambahbuku{
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    background-color: #BCBCBC;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #BCBCBC;
+    border-radius: 5px;
+}
+button{
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;                 
+}
+#klip{
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+#book{
+  background-color: #393939;
+  position: relative;
+  top: 50px;
+  width: 150px;
+  height: 40px;
+}
+#buku{
+  color: white;
+  position: relative;
+}
+#imgbuku{
+  position: relative;
+  top: 7px;
+  left: 15px;
+}

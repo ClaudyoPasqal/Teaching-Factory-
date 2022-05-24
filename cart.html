@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="Css/cart.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar start -->
+        <div class="navbar">
+            <div class="btn">
+                <a href="index.html">
+                    <img src="assets/Frame.png" alt="">
+                </a>
+            </div>
+            <div class="cart" id="cart">
+                <img src="assets/Keranjang 3.png" alt="">
+            </div>
+        </div> 
+        <div class="action">
+            <div class="profile" onclick="menuToggle()">
+                <img src="assets/user.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><img src="assets/user 2.png" alt=""><a href="profile.html">Profile</a></li>
+                    <li class="border"><img src="assets/logout 1.png" alt=""><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Navbar end -->
+        <!-- Book start -->
+        <div class="buku">
+            <div class="head">
+                <h1>My Cart</h1>
+                <h5>Review Your Order</h5>
+            </div>
+            <div class="isi1">
+                <img src="assets/buku detail 2.png" alt="" id="gambar">
+                <div class="isi">
+                    <h1 id="isitext">My Own Private Mr. Cool</h1>
+                    <h2>By. Indah Hanaco</h2>
+                    <h3>Rp. 75.000</h3>
+                </div>
+                <div class="trash">
+                    <img src="assets/Trash.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bayar">
+            <img src="assets/payment.png" alt="" id="transaksi">
+            <input type="submit" value="Pay" id="bayar1" onclick="toggle()">
+        </div>
+        <div id="popup1">
+            <div id="popup">
+                <a href="profile.html" id="poptext">Thank you for ordering in us, please wait 1 x 24 hours to verify you order</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active');
+        }
+        function toggle(){
+            const popup = document.getElementById('popup1');
+            popup.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
